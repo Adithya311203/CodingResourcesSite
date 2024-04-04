@@ -1,0 +1,106 @@
+*{
+    background-color: black;
+   width: 100%;
+}
+img{
+    height: 170px;
+    width: 170px;
+    
+    border-radius: 15px;
+    border-bottom: solid blue cyan 2px;
+    padding:50px 100px;
+    background-image: linear-gradient(black,black,grey,black);
+}
+
+.card{background-image:linear-gradient(90deg,black,black,black);
+    border: solid 3px;
+    border-radius: 15px;
+    text-decoration: none;
+    width: fit-content;
+    color: inherit;
+    height: fit-content;
+    padding-bottom: fit-content ;
+    box-shadow: 0 0 10px blue;
+    margin: 25px 20px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.card:hover{
+    box-shadow: 0 0 100px blue;
+    background-image:linear-gradient(90deg,blue,cyan,blue);
+    text-shadow: 0 0 20px 500px yellow;
+    transition-duration: 0.4s;
+    
+}
+
+.text{
+    text-align: center;
+    padding-bottom: 20px ;
+    
+    margin-top:none;
+    background-image: linear-gradient(90deg,blue,cyan,blue);
+    background-clip: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.card:hover .text{
+    background-image: linear-gradient(90deg,black,black);
+    background-clip: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    
+}
+.card:hover img{
+    background-image: linear-gradient(black,black);
+    transition-duration: 1s;
+}
+.row{
+    width: 100%;
+}
+.column{
+    display: flex;
+    padding: 5px 10px;
+    flex-wrap: wrap;
+    
+}
+.header{
+    display: flex;
+}
+
+.title {
+    display: flex;
+    
+    background-image: linear-gradient(black,rgb(34, 33, 33));
+}
+
+h1,i{
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    font-size: 50px;
+    padding: 15px;
+    padding-left: 45px;
+    border-bottom: 1px ;
+    margin: -1;
+    background-image: inherit;
+}
+
+.material-symbols-outlined{
+    width: fit-content;
+    margin-right: -1;
+    align-content: center;
+    font-size: 50px;
+}
+
+.card:hover{
+    transform-origin: center;
+    transform: perspective(800px) rotateY(330deg);
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+     }
