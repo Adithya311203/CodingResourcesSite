@@ -77,6 +77,14 @@ img{
     display: flex;
     
     background-image: linear-gradient(black,rgb(34, 33, 33));
+    animation: blink 1.9s infinite alternate;
+}
+
+@keyframes blink{
+    0% { box-shadow: 0 4px 40px blue;}
+    33% { box-shadow: 0 4px 40px cyan;}
+    66% { box-shadow: 0 4px 40px lime;}
+    100% { box-shadow: 4 4px 40px greenyellow;}
 }
 
 h1,i{
