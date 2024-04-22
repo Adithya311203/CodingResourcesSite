@@ -1,6 +1,7 @@
 *{
     background-color: black;
    width: 100%;
+   margin: 0;
 }
 img{
     height: 130px;
@@ -9,7 +10,7 @@ img{
     border-radius: 15px;
     border-bottom: solid blue cyan 2px;
     padding:50px 100px;
-    background-image: linear-gradient(black,black,grey,black);
+    background-image: linear-gradient(45deg,black,grey);
 }
 
 .card{background-image:linear-gradient(90deg,black,black,black);
